@@ -26,7 +26,7 @@
     "strapi-plugin-upload": "3.5.3",
     "strapi-plugin-users-permissions": "3.5.3",
     "strapi-provider-upload-aws-s3": "^3.5.4",
-    "strapi-provider-upload-aws-s3-resizing-and-optimisation": "^3.2.6",
+    "strapi-provider-upload-aws-s3-enhanced": "^3.5.3",
     "strapi-utils": "3.5.3"
   },
   "author": {
