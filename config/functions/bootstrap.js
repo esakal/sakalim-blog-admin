@@ -12,7 +12,6 @@ const {
 } = require("../../data/data.json");
 
 async function isFirstRun() {
-  throw new Error('should not seed bootstrap data as the schema was already changed so data is not in sync. aborted manually (you can override it from bootstrap.js file)')
   const pluginStore = strapi.store({
     environment: strapi.config.environment,
     type: "type",
@@ -160,6 +159,8 @@ module.exports = async () => {
   const shouldImportSeedData = await isFirstRun();
 
   if (shouldImportSeedData) {
+    throw new Error('should not seed bootstrap data as the schema was already changed so data is not in sync. aborted manually (you can override it from bootstrap.js file)')
+
     try {
       console.log('Setting up your starter...');
       await importSeedData();
