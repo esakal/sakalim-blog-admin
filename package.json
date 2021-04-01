@@ -2,7 +2,7 @@
   "name": "my-app-name",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "sakalim.com admin blog",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -30,7 +30,7 @@
     "strapi-utils": "3.5.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Eran Sakal"
   },
   "strapi": {
     "uuid": "28c95ce8-c814-4d3e-9284-762422181e48",
