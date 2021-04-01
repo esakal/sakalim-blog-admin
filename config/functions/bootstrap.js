@@ -12,6 +12,7 @@ const {
 } = require("../../data/data.json");
 
 async function isFirstRun() {
+  throw new Error('should not seed bootstrap data as the schema was already changed so data is not in sync. aborted manually (you can override it from bootstrap.js file)')
   const pluginStore = strapi.store({
     environment: strapi.config.environment,
     type: "type",

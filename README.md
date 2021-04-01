@@ -1,3 +1,3 @@
-# Strapi application
+# Sakalim Blog Admin application
 
-A quick description of your strapi application
+Based on Strapi framework
