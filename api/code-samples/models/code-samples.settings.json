@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "code_samples",
+  "info": {
+    "name": "Code Samples",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "products": {
+      "collection": "product",
+      "via": "codeSamples",
+      "dominant": true
+    },
+    "codeSampleFile": {
+      "type": "component",
+      "repeatable": true,
+      "component": "code-samples.code-sample-file",
+      "required": false
+    },
+    "codeSampleProject": {
+      "type": "component",
+      "repeatable": true,
+      "component": "code-samples.code-sample-project"
+    }
+  }
+}

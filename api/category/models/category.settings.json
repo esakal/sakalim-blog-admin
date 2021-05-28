@@ -21,8 +21,8 @@
       "required": true
     },
     "articles": {
-      "collection": "article",
-      "via": "category"
+      "via": "category",
+      "collection": "article"
     },
     "color": {
       "type": "string",

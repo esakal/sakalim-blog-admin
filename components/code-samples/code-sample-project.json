@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_code_samples_code_sample_projects",
+  "info": {
+    "name": "codeSampleProject",
+    "icon": "project-diagram"
+  },
+  "options": {},
+  "attributes": {
+    "serviceName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "projectLink": {
+      "type": "string"
+    }
+  }
+}

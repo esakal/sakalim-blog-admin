@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "tags",
+  "collectionName": "product_types",
   "info": {
-    "name": "tag",
-    "description": ""
+    "name": "ProductTypes"
   },
   "options": {
     "increments": true,
@@ -16,14 +15,9 @@
       "required": true,
       "unique": true
     },
-    "slug": {
-      "type": "uid",
-      "required": true,
-      "targetField": "name"
-    },
-    "articles": {
-      "via": "tags",
-      "collection": "article"
+    "products": {
+      "via": "productType",
+      "collection": "product"
     }
   }
 }

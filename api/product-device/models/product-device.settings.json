@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_devices",
+  "info": {
+    "name": "ProductDevice"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "deviceName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "products": {
+      "via": "productDevices",
+      "collection": "product"
+    }
+  }
+}

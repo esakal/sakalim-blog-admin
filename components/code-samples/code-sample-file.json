@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_code_samples_code_sample_files",
+  "info": {
+    "name": "CodeSampleFile",
+    "icon": "file-alt"
+  },
+  "options": {},
+  "attributes": {
+    "fileName": {
+      "type": "string"
+    },
+    "fileDescription": {
+      "type": "richtext"
+    },
+    "fileContent": {
+      "type": "richtext"
+    },
+    "exampleLink": {
+      "type": "string"
+    }
+  }
+}

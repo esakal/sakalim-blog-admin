@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_products_links",
+  "info": {
+    "name": "links",
+    "icon": "external-link-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

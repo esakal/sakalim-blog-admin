@@ -42,8 +42,8 @@
       "required": true
     },
     "category": {
-      "via": "articles",
-      "model": "category"
+      "model": "category",
+      "via": "articles"
     },
     "image": {
       "model": "file",
@@ -61,8 +61,9 @@
       "via": "articles"
     },
     "tags": {
-      "via": "article",
-      "collection": "tag"
+      "collection": "tag",
+      "via": "articles",
+      "dominant": true
     },
     "devToSlug": {
       "type": "uid"

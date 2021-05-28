@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "productType": {
+      "model": "product-types",
+      "via": "products"
+    },
+    "website": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "linkToLogo": {
+      "type": "string"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.links"
+    },
+    "productDevices": {
+      "collection": "product-device",
+      "via": "products",
+      "dominant": true
+    },
+    "Pricing": {
+      "type": "text"
+    },
+    "codeSamples": {
+      "via": "products",
+      "collection": "code-samples"
+    }
+  }
+}

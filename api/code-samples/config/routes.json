@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/code-samples",
+      "handler": "code-samples.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/code-samples/count",
+      "handler": "code-samples.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/code-samples/:id",
+      "handler": "code-samples.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/code-samples",
+      "handler": "code-samples.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/code-samples/:id",
+      "handler": "code-samples.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/code-samples/:id",
+      "handler": "code-samples.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
