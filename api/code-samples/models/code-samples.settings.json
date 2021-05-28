@@ -15,8 +15,8 @@
       "type": "richtext"
     },
     "products": {
-      "collection": "product",
       "via": "codeSamples",
+      "collection": "product",
       "dominant": true
     },
     "codeSampleFile": {

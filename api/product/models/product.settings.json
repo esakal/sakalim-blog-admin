@@ -19,9 +19,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text"
-    },
     "productType": {
       "model": "product-types",
       "via": "products"
@@ -51,8 +48,11 @@
       "type": "text"
     },
     "codeSamples": {
-      "via": "products",
-      "collection": "code-samples"
+      "collection": "code-samples",
+      "via": "products"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
